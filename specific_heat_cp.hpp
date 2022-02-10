@@ -42,6 +42,14 @@ namespace cp
                 82.751 * pow(t, 0.5) -
                 3.6989 * t;
     }
+    static inline double h2(double k)
+    {
+        double t = k/100;
+        return  56.505 -
+                702.74 * pow(t, -0.75) +
+                1165 * pow(t, -1) -
+                560.7 * pow(t, -1.5);
+    }
 }
 
 #endif //ADIABATIC_CALCULATOR_SPECIFIC_HEAT_CP_HPP
